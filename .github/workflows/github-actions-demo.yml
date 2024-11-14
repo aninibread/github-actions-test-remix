@@ -5,8 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - name: Build
-        run: npm run build
       - uses: actions/checkout@v4
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
